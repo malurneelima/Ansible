@@ -1,6 +1,9 @@
 - name: Variables to print
   hosts: web
+  vars:
+    NAME: "Neelima"
+    COURSE: "Ansible"
   tasks:
   - name: print the information
     ansible.builtin.debug:
-      msg: "Hi This is Neelima. I am learning Ansible"
+      msg: "Hi This is {{NAME}}. I am learning {{COURSE}}"

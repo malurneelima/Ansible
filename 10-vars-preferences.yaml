@@ -1,7 +1,7 @@
 - name: Variables preferences from task,play,files,prompt,inventory,args
   hosts: web
-  vars:
-    LOCATION: "Greelay from play"
+  #vars:
+  #  LOCATION: "Greelay from play"
   #vars_files:
   #- vars.yaml
   #vars_prompt:

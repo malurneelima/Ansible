@@ -1,0 +1,16 @@
+- name: Variables preferences from task,play,files,prompt,inventory,args
+  hosts: web
+  vars:
+    LOCATION: "Greelay from play"
+  vars_files:
+  - vars.yaml
+  vars_prompt:
+  - name: LOCATION
+    prompt: "Please enter the location"
+    private: false
+  tasks:
+  - name: Print the information
+    vars:
+      LOCATION: "Greelay from task"
+    ansible.builtin.debug:
+      msg: "Hi, This is Sagar from {{LOCATION}}"

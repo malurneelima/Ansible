@@ -1,8 +1,7 @@
 - name: variables from files
   hosts: web
-  vars:
-    NAME: "Neelima"
-    COURSE: "Ansible"
+  vars_files:
+  - vars.yaml
   tasks:
   - name: print the course information
     ansible.builtin.debug:

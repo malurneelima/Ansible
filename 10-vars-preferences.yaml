@@ -4,10 +4,10 @@
     LOCATION: "Greelay from play"
   #vars_files:
   #- vars.yaml
-  vars_prompt:
-  - name: LOCATION
-    prompt: "Please enter the location"
-    private: false
+  #vars_prompt:
+  #- name: LOCATION
+  #  prompt: "Please enter the location"
+  #  private: false
   tasks:
   - name: Print the information
     #vars:

@@ -10,7 +10,7 @@
     private: false
   tasks:
   - name: Print the information
-    vars:
-      LOCATION: "Greelay from task"
+    #vars:
+      #LOCATION: "Greelay from task"
     ansible.builtin.debug:
       msg: "Hi, This is Sagar from {{LOCATION}}"

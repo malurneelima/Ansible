@@ -2,8 +2,8 @@
   hosts: web
   vars:
     LOCATION: "Greelay from play"
-  vars_files:
-  - vars.yaml
+  #vars_files:
+  #- vars.yaml
   vars_prompt:
   - name: LOCATION
     prompt: "Please enter the location"

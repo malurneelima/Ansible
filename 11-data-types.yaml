@@ -1,5 +1,6 @@
 - name: Devops information
   hosts: local
+  connection: local
   vars:
     course: "Ansible in Devops" #string
     duration: 120 #number

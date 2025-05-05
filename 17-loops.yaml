@@ -1,10 +1,11 @@
 - name: Loops demo to install multiple packages
   hosts: local
   connection: local
+  become: true
   tasks:
   - name: print names
     ansible.builtin.package:
-      name: {{ item }}
+      name: "{{ item }}""
       state: present
     loop:
     - mysql

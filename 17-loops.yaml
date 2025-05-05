@@ -1,6 +1,5 @@
 - name: Loops demo to install multiple packages
-  hosts: local
-  connection: local
+  hosts: web
   become: true
   tasks:
   - name: print names
